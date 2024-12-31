@@ -44,11 +44,11 @@ cd $destinationDirectory
 destDirAbsPath=`pwd`
 
 # [TASK 7]
-cd origAbsPath 
-cd targetDirectory
+cd $origAbsPath 
+cd $targetDirectory
 
 # [TASK 8]
-yesterdayTS=$(($currentTS + 24 * 60 * 60))
+yesterdayTS=$(($currentTS - 24 * 60 * 60))
 
 declare -a toBackup
 
